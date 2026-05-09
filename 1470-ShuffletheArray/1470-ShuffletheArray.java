@@ -1,16 +1,17 @@
-// Last updated: 09/05/2026, 09:33:05
+// Last updated: 09/05/2026, 09:33:47
 1class Solution {
-2    public int[] getConcatenation(int[] nums) {
-3        int index = 0;
-4        int[] arr = new int[nums.length * 2];
-5        for(int num : nums){
-6            arr[index] = num;
-7            index++;
-8        }
-9        for(int num : nums){
-10            arr[index] = num;
-11            index++;
-12        }
-13        return arr;
-14    }
-15}
+2    public int findMaxConsecutiveOnes(int[] nums) {
+3        int cnt = 0;
+4        int maxcnt = 0;
+5        for(int i=0;i<nums.length;i++){
+6            if(nums[i]==1){
+7                cnt++;
+8                maxcnt = Math.max(cnt,maxcnt);
+9            }
+10            else{
+11                cnt = 0;
+12            }
+13        }
+14        return maxcnt;
+15    }
+16}
