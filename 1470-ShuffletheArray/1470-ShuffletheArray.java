@@ -1,4 +1,4 @@
-// Last updated: 09/05/2026, 09:33:47
+// Last updated: 09/05/2026, 09:34:42
 1class Solution {
 2    public int findMaxConsecutiveOnes(int[] nums) {
 3        int cnt = 0;
